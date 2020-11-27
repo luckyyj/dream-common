@@ -11,7 +11,6 @@ import lombok.Data;
  **/
 
 @Data
-@AllArgsConstructor
 public class BaseException extends RuntimeException {
 
     /**
@@ -23,5 +22,11 @@ public class BaseException extends RuntimeException {
      * 异常信息
      */
     private String msg;
+
+    public BaseException(String code, String msg){
+        super(msg);
+        this.code = code;
+        this.msg = msg;
+    }
 
 }
