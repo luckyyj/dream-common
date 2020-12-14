@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>cn.com.dream.framework</groupId>
+        <groupId>cn.com.dream</groupId>
         <artifactId>dream-starter</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/>

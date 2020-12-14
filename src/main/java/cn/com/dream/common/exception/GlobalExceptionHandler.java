@@ -27,7 +27,12 @@ public class GlobalExceptionHandler {
         return Result.builder().code(ResultEnum.DEFAULT_ERROR.getCode()).msg(ResultEnum.DEFAULT_ERROR.getMsg()).build();
     }
 
-
+    /**
+     * 自定义异常
+     *
+     * @param exception
+     * @return
+     */
     @ExceptionHandler(value = BaseException.class)
     public Result baseExceptionHandler(BaseException exception) {
         log.error(exception.getMsg(), exception);
